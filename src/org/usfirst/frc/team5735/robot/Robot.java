@@ -41,7 +41,7 @@ public class Robot extends IterativeRobot {
 	
     public void robotInit(){
 		shooterFlywheelMasterMotor.set(0);
-		shooterFlywheelSlaveMotor.changeControlMode(CANTalon.ControlMode.Follower);
+		shooterFlywheelSlaveMotor.changeControlMode(CANTalon.TalonControlMode.Follower);
 		shooterFlywheelSlaveMotor.set(shooterFlywheelMasterMotor.getDeviceID());
 		shooterFlywheelSlaveMotor.reverseOutput(true);
 		shooterPusherMotor.set(0);
